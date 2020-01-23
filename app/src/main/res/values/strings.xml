@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">supportwheeloffate</string>
+    <string name="gen_2_weeks_timetable">Generate Schedule</string>
+
+    <string name="engineer">Engineer</string>
+    <string name="timetable">Timetable</string>
+    <string name="day_shift">Day Shift</string>
+    <string name="night_shift">Night Shift</string>
+    <string name="loading">Loading</string>
+
+    <string name="error_no_internet_connection">Error: Please Check Your Internet Connection</string>
+</resources>

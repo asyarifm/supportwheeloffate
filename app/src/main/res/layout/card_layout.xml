@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app2="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="@dimen/card_height"
+
+        card_view:cardCornerRadius="@dimen/card_corner_radius"
+        card_view:cardElevation="@dimen/card_elevation"
+        card_view:cardUseCompatPadding="true"
+        android:layout_gravity="center">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/colorRed">
+
+        <TextView
+            android:id="@+id/date_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/big_font_size"
+            android:textStyle="bold"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintBottom_toTopOf="@id/day_text_view" />
+
+        <TextView
+            android:id="@+id/day_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/day_shift"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            card_view:layout_constraintTop_toBottomOf="@id/date_text_view"
+            card_view:layout_constraintBottom_toTopOf="@id/day_engineer_text_view"/>
+
+        <TextView
+            android:id="@+id/day_engineer_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            card_view:layout_constraintTop_toBottomOf="@id/day_text_view"
+            card_view:layout_constraintBottom_toTopOf="@id/night_text_view"/>
+
+        <TextView
+            android:id="@+id/night_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/night_shift"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            card_view:layout_constraintTop_toBottomOf="@id/day_engineer_text_view"
+            card_view:layout_constraintBottom_toTopOf="@id/night_engineer_text_view"/>
+
+        <TextView
+            android:id="@+id/night_engineer_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            card_view:layout_constraintTop_toBottomOf="@id/night_text_view"
+            card_view:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
