@@ -26,6 +26,4 @@ https://private-e9d084-supportwheeloffate5.apiary-mock.com/engineers
 Android 8.0 and above
 
 # Tools and Frameworks
-Android SDK
-Apriary
-Java 8
+Android SDK, Apriary, Java 8
